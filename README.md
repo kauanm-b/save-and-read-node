@@ -1,28 +1,28 @@
 # Save and Read Custom Data
 
-Este pacote contém nodes personalizados para o Node-RED que permitem salvar e ler dados em arquivos JSON.
+This package contains custom nodes for Node-RED that allow saving and reading data in JSON files.
 
 ## Nodes
 
 ### custom-save-data
 
-Salva dados especificados em um arquivo JSON.
+Saves specified data into a JSON file.
 
-#### Configuração
-- `folderPath`: Caminho para a pasta onde o arquivo será salvo.
-- `fileName`: Nome do arquivo.
-- `variables`: Lista de variáveis a serem salvas.
+#### Configuration
+- `folderPath`: Path to the folder where the file will be saved.
+- `fileName`: Name of the file.
+- `variables`: List of variables to be saved.
 
 ### custom-read-data
 
-Lê dados de um arquivo JSON e os injeta na mensagem.
+Reads data from a JSON file and injects it into the message.
 
-#### Configuração
-- `folderPath`: Caminho para a pasta onde o arquivo está localizado.
-- `fileName`: Nome do arquivo.
-- `variables`: Lista de variáveis a serem lidas.
+#### Configuration
+- `folderPath`: Path to the folder where the file is located.
+- `fileName`: Name of the file.
+- `variables`: List of variables to be read.
 
-## Instalação
+## Installation
 
 ```bash
 npm install save-and-read-custom-data
