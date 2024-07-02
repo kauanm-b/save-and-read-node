@@ -1,0 +1,26 @@
+{
+    "name": "save-and-read-custom-data",
+    "version": "1.0.0",
+    "description": "Custom Node-RED nodes for reading and saving data",
+    "main": "index.js",
+    "scripts": {
+        "start": "node-red"
+    },
+    "dependencies": {
+        "node-red": "^2.0.0"
+    },
+    "node-red": {
+        "nodes": {
+            "custom-save-data": "nodes/custom-save-data/custom-save-data.js",
+            "custom-read-data": "nodes/custom-read-data/custom-read-data.js"
+        }
+    },
+    "keywords": [
+        "node-red",
+        "node-red-node",
+        "custom-save-data",
+        "custom-read-data"
+    ],
+    "author": "Kauan Moreira Barcellos <kauanbarcellos11@gmail.com>",
+    "license": "MIT"
+}

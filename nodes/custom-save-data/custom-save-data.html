@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    RED.nodes.registerType('custom-save-data', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" },
+            folderPath: { value: "", required: true },
+            fileName: { value: "", required: true },
+            variables: { value: "", required: true }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: 'file.png',
+        label: function () {
+            return this.name || "custom-save-data";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="custom-save-data">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-folderPath"><i class="icon-folder"></i> Folder Path</label>
+        <input type="text" id="node-input-folderPath" placeholder="/path/to/folder">
+    </div>
+    <div class="form-row">
+        <label for="node-input-fileName"><i class="icon-file"></i> File Name</label>
+        <input type="text" id="node-input-fileName" placeholder="file.json">
+    </div>
+    <div class="form-row">
+        <label for="node-input-variables"><i class="icon-list"></i> Variables</label>
+        <input type="text" id="node-input-variables" placeholder="payload, topic, etc.">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="custom-save-data">
+    <p>Saves specified variables to a file in JSON format.</p>
+    <p>Provide the folder path, file name, and a comma-separated list of variables to save.</p>
+</script>
